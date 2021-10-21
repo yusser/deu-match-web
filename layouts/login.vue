@@ -1,7 +1,7 @@
 <template>
   <div id="LoginLayout">
     <img
-      id="logo-linkedin"
+      id="logo-deal"
       src="http://www.deal.com.br/wp-content/uploads/2021/02/deal-logo.svg"
       alt="Deal"
       width="198px"
@@ -33,8 +33,9 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.726);
 }
-#logo-linkedin {
+#logo-deal {
   margin-top: 90px;
+  margin-left: 4px;
 }
 #logo-deu-match {
   color: white;
