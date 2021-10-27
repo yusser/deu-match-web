@@ -2,6 +2,10 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  server: {
+    port: 3001
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'deu-match-web',
@@ -59,7 +63,7 @@ export default {
         endpoints: {
           authorization: 'https://www.linkedin.com/oauth/v2/authorization',
           token: undefined,
-          userInfo: 'https://api.linkedin.com/v2/me',
+          userInfo: undefined,
           logout: undefined
         },
         token: {
@@ -74,9 +78,9 @@ export default {
         responseType: 'code',
         grantType: 'authorization_code',
         accessType: 'client_credentials',
-        redirectUri: 'http://localhost:3000',
+        redirectUri: 'http://localhost:3000/linkedin/v1/me',
         logoutRedirectUri: undefined,
-        clientId: '781bflw9ulh6v1',
+        clientId: '86hu2w370f8s5s',
         scope: ['r_emailaddress', 'r_liteprofile'],
         state: 'auJShDehau09819283dhahh94872k2jh2k',
         // autoLogout: false
