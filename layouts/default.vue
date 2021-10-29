@@ -7,13 +7,12 @@
             id="logo-deal"
             src="http://www.deal.com.br/wp-content/uploads/2021/02/deal-logo.svg"
             alt="Deal"
-            width="198px"
-            height="69px"
+            height="50px"
           />
           <span id="logo-deu-match">Deu Match</span>
         </div>
         <div>
-          <button @click="Sair">Sair</button>
+          <el-button @click="Sair">Sair</el-button>
         </div>
       </el-header>
       <el-main><nuxt /></el-main>
@@ -48,7 +47,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: #464646;
 }
 #DefaultLayout .el-header {
   display: flex;
@@ -66,7 +65,7 @@ export default {
 }
 #DefaultLayout .el-header #logo #logo-deu-match{
   color: white;
-  font-size: 50px;
+  font-size: 41px;
   font-weight: 800;
   margin-left: 30px;
 }
