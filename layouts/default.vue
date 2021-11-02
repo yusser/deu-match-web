@@ -16,7 +16,7 @@
         </div>
       </el-header>
       <el-main><nuxt /></el-main>
-      <el-footer height="100px">
+      <el-footer height="90px">
         <span style="color: rgba(255, 255, 255, 0.39)">
           Deal 2021 © All rights Reserved. Designed by Deal 💚
         </span>
