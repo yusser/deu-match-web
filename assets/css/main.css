@@ -6,6 +6,7 @@
 
 html, body, #__nuxt, #__layout {
   height: 100%;
+  overflow: hidden;
 }
 
 .el-button:active, .el-button:focus, .el-button:hover {

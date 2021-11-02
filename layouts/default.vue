@@ -16,7 +16,7 @@
         </div>
       </el-header>
       <el-main><nuxt /></el-main>
-      <el-footer>
+      <el-footer height="100px">
         <span style="color: rgba(255, 255, 255, 0.39)">
           Deal 2021 © All rights Reserved. Designed by Deal 💚
         </span>
@@ -69,8 +69,13 @@ export default {
   font-weight: 800;
   margin-left: 30px;
 }
+#DefaultLayout .el-main {
+  padding-bottom: 0;
+}
 #DefaultLayout .el-footer {
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-left: 180px;
 }
 </style>

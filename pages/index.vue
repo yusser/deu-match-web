@@ -6,13 +6,13 @@
       <h3>Vagas</h3>
     </div>
     <div id="Content">
-      <div>
-        Perfil do Candidato:
-        <hr />
+      <div class="padding-25">
+        <div class="header">Complete o cadastro com dados pessoais...</div>
         <img :src="image" alt="profileImage">
-        <pre>
-          {{ user }}
-        </pre>
+        {{ user.id }}
+        {{ user.localizedFirstName }}
+        {{ user.localizedLastName }}
+        {{ user.emailAddress }}
       </div>
     </div>
   </div>
@@ -42,17 +42,26 @@ export default {
 }
 
 #Menu {
-  width: 210px;
+  width: 180px;
 }
 
 #Content {
   background-color: white;
-  height: 100%;
-  width: 100%;
+  height: calc(100%-220px);
+  width: calc(100% - 180px);
   border-radius: 0 0 0 20px;
 }
-#Content div {
-  padding:25px;
+#Content div.padding-25 {
+  padding:0 25px 0 25px;
+}
+#Content .header {
+  color: #464646;
+  font-weight: 600;
+  font-size: 1.17em;
+  padding-top: 21px;
+  padding-bottom: 18px;
+  margin-bottom: 25px;
+  border-bottom: 1px dotted #464646;
 }
 
 h3 {
